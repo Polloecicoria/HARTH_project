@@ -50,7 +50,7 @@ Per replicare l'analisi e l'addestramento del modello, segui questi passaggi:
     ```
 
 2.  **Preparazione Dati**:
-    * Scaricare il dataset HARTH e inserire i file `.csv` nella cartella `data/`.
+    *Lo script scarica e inizializza automaticamnete i dati dal dataset HARTH tramite indirizzo http.
     * Eseguire lo script di preprocessing per generare le finestre temporali e calcolare le feature (SMA, Energia, ecc.).
 
 3.  **Training del Modello**:
