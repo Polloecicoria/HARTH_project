@@ -44,19 +44,20 @@ Il progetto è sviluppato in Python utilizzando il seguente stack tecnologico:
 Per replicare l'analisi e l'addestramento del modello, segui questi passaggi:
 
 1.  **Configurazione Ambiente**:
-   Python  deve essereninstallato. Installare le dipendenze necessarie tramite pip:
+   Python  deve essere installato. Installare le dipendenze necessarie tramite pip:
     ```bash
     pip install numpy pandas matplotlib scikit-learn lightgbm
     ```
 
 2.  **Preparazione Dati**:
     *Lo script scarica e inizializza automaticamnete i dati dal dataset HARTH tramite indirizzo http.
+    *Lo script è stato scritto in ambiente colab e quindi ottimizzato per questo ambiente.
     * Eseguire lo script di preprocessing per generare le finestre temporali e calcolare le feature (SMA, Energia, ecc.).
 
-3.  **Training del Modello**:
+4.  **Training del Modello**:
     * Lanciare il notebook o lo script principale di training.
     * Il sistema utilizzerà il `GroupShuffleSplit` per dividere i soggetti e addestrerà il classificatore `LGBMClassifier`.
 
-4.  **Generazione Risultati**:
+5.  **Generazione Risultati**:
     * Al termine dell'esecuzione, verranno visualizzate a schermo la Confusion Matrix e il Classification Report con i valori di F1-score per ogni attività.
     * Verrà generato un grafico a barre relativo alla Feature Importance per mostrare quali sensori hanno influenzato maggiormente la classificazione.
